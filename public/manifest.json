@@ -1,0 +1,17 @@
+{
+  "name": "GitLab",
+  "details": "",
+  "icon": {
+    "url": "./images/logo.png"
+  },
+  "author": "GitLab Inc",
+  "capabilities": [
+    "card-buttons",
+    "show-settings"
+  ],
+  "connectors": {
+    "iframe": {
+      "url": "./index.html"
+    }
+  }
+}
