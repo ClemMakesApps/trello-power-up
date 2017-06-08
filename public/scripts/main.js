@@ -11,6 +11,21 @@ TrelloPowerUp.initialize({
           t.get('organization', 'private', 'token')
         ]).then(function(r) {
           console.log(r);
+          let api = r[0];
+          let token = r[1];
+
+          axios.get(`${api}/projects`, {
+            params: {
+              membership: true,
+              private_token: token,
+            }
+          })
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
         });
       }
     }];
