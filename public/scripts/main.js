@@ -1,13 +1,14 @@
-var callback = function(t) {
-  console.log('callbacked');
-}
-
 TrelloPowerUp.initialize({
   'card-buttons': function(t, options) {
     return [{
       icon: './images/logo.png',
       text: 'GitLab',
-      callback: callback
+      callback: function(t) {
+        return t.popup({
+          title: "Card Button Popup",
+          url: './card_button.html'
+        });
+      }
     }];
   },
   'show-settings': function(t, options){
