@@ -4,7 +4,10 @@ TrelloPowerUp.initialize({
       icon: './images/logo.png',
       text: 'GitLab',
       callback: function (t) {
-        console.log(t.get('organization', 'private', 'api'));
+        t.get('organization', 'private', 'api')
+          .then(function(r) {
+            console.log(r);
+          });
       }
     }];
   },
