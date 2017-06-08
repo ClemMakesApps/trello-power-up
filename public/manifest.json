@@ -6,9 +6,9 @@
   },
   "author": "GitLab Inc",
   "capabilities": [
+    "callback",
     "card-buttons",
-    "show-settings",
-    "callback"
+    "show-settings"
   ],
   "connectors": {
     "iframe": {
