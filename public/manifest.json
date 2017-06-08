@@ -6,8 +6,8 @@
   },
   "author": "GitLab Inc",
   "capabilities": [
-    "callback",
     "card-buttons",
+    "callback",
     "show-settings"
   ],
   "connectors": {
