@@ -3,11 +3,8 @@ TrelloPowerUp.initialize({
     return [{
       icon: './images/logo.png',
       text: 'GitLab',
-      callback: function(t) {
-        return t.popup({
-          title: "Card Button Popup",
-          url: './card_button.html'
-        });
+      callback: function (t) {
+        console.log('success');
       }
     }];
   },
